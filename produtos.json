@@ -1,0 +1,20 @@
+[
+    {
+        "nome": "Capacete de Segurança",
+        "descricao": "Capacete de segurança resistente e confortável.",
+        "preco": "1700,99 MT",
+        "imagem": "images/capacete.jpg"
+    },
+    {
+        "nome": "Luva de Proteção",
+        "descricao": "Luva de proteção contra cortes e abrasões.",
+        "preco": "1700,99 MT",
+        "imagem": "images/luva.jpg"
+    },
+    {
+        "nome": "Botas de Segurança",
+        "descricao": "Botas de segurança com biqueira de aço.",
+        "preco": "1700,99 MT",
+        "imagem": "images/botas.jpg"
+    }
+]

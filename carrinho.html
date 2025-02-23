@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Loja de Materiais de Segurança">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html">Cotação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrinho">
+        <h2>Cotação Materiais de Segurança</h2>
+        <div id="itens-carrinho">
+            <!-- Itens do carrinho serão exibidos aqui -->
+        </div>
+        <div id="total-carrinho">
+            <strong>Total: R$ 0,00</strong>
+        </div>
+        <button id="finalizar-compra">Exportar Cotação</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Moz Security Supplies. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            const itensCarrinhoDiv = document.getElementById('itens-carrinho');
+            const totalCarrinhoDiv = document.getElementById('total-carrinho');
+            const finalizarCompraBtn = document.getElementById('finalizar-compra');
+
+            if (carrinho.length === 0) {
+                itensCarrinhoDiv.innerHTML = "<p>Seu carrinho está vazio.</p>";
+            } else {
+                let total = 0;
+                carrinho.forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.classList.add('item-carrinho');
+                    itemDiv.innerHTML = `
+                        <img src="${item.imagem}" alt="${item.nome}" width="50">
+                        <span>${item.nome}</span>
+                        <span>R$ ${item.preco}</span>
+                        <span>Quantidade: ${item.quantidade}</span>
+                    `;
+                    itensCarrinhoDiv.appendChild(itemDiv);
+                    total += parseFloat(item.preco.replace("R$", "").replace(",", ".").trim()) * item.quantidade;
+                });
+                totalCarrinhoDiv.innerHTML = `<strong>Total: R$ ${total.toFixed(2)}</strong>`;
+            }
+
+            finalizarCompraBtn.addEventListener("click", function() {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+                doc.text("Cotação Moz Security Supplies", 10, 10);
+                let y = 20;
+                carrinho.forEach(item => {
+                    doc.text(`${item.nome} - Quantidade: ${item.quantidade} - Preço: R$ ${item.preco}`, 10, y);
+                    y += 10;
+                });
+                doc.text(`Total: R$ ${totalCarrinhoDiv.innerText.replace("Total: ", "")}`, 10, y + 10);
+                doc.save("Cotação_Moz_Security_supplies.pdf");
+            });
+        });
+    </script>
+</body>
+</html>
