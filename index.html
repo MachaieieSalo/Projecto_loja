@@ -14,21 +14,66 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="carrinho.html">Cotação</a></li>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="produtos.html" id="produtos">Produtos</a></li>
+                <li><a href="contacto.html" id="contacto">Contacto</a></li>
+                <li><a href="carrinho.html" id="carrinho">Cotação</a></li>
             </ul>
         </nav>
+        <button id="toggleLang">Mudar para Inglês</button>
     </header>
 
     <section class="produtos-container">
+        <h2 id="produtosTitle">Produtos</h2>
         <!-- Os produtos serão carregados aqui via JavaScript -->
     </section>
 
     <footer>
-        <p>&copy; 2025 Moz Security Supplies.Powered by: Salomao Machaieie Todos os direitos reservados.</p>
+        <p id="footerText">&copy; 2025 Moz Security Supplies. Powered by: Salomao Machaieie. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        const texts = {
+            pt: {
+                home: "Home",
+                produtos: "Produtos",
+                contacto: "Contacto",
+                carrinho: "Cotação",
+                produtosTitle: "Produtos",
+                footerText: "&copy; 2025 Moz Security Supplies. Powered by: Salomao Machaieie. Todos os direitos reservados.",
+                toggle: "Mudar para Inglês"
+            },
+            en: {
+                home: "Home",
+                produtos: "Products",
+                contacto: "Contact",
+                carrinho: "Quotation",
+                produtosTitle: "Products",
+                footerText: "&copy; 2025 Moz Security Supplies. Powered by: Salomao Machaieie. All rights reserved.",
+                toggle: "Switch to Portuguese"
+            }
+        };
+
+        let currentLang = 'pt';
+
+        function updateLanguage() {
+            document.getElementById('home').innerText = texts[currentLang].home;
+            document.getElementById('produtos').innerText = texts[currentLang].produtos;
+            document.getElementById('contacto').innerText = texts[currentLang].contacto;
+            document.getElementById('carrinho').innerText = texts[currentLang].carrinho;
+            document.getElementById('produtosTitle').innerText = texts[currentLang].produtosTitle;
+            document.getElementById('footerText').innerHTML = texts[currentLang].footerText;
+            document.getElementById('toggleLang').innerText = texts[currentLang].toggle;
+        }
+
+        document.getElementById('toggleLang').addEventListener('click', function() {
+            currentLang = currentLang === 'pt' ? 'en' : 'pt';
+            updateLanguage();
+        });
+
+        // Inicializa a linguagem
+        updateLanguage();
+    </script>
 
     <script src="script.js"></script>
 </body>
