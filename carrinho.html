@@ -28,6 +28,9 @@
         <h2>Cotação Materiais de Segurança</h2>
         <label for="empresaNome">Nome da Empresa:</label>
         <input type="text" id="empresaNome" placeholder="Digite o nome da empresa">
+        <input type="text" id="empresanuit" placeholder="Digite o NUIT">
+        <input type="text" id="empresaendereco" placeholder="Digite o endereço da empresa">
+        <input type="text" id="empresaemail" placeholder="Digite o endereço da email">
         <div id="itens-carrinho">
             <!-- Itens do carrinho serão exibidos aqui -->
         </div>
@@ -81,16 +84,20 @@
                 doc.addImage(logo, 'PNG', 10, 10, 50, 20); // Ajuste a posição e tamanho conforme necessário
                 doc.setFontSize(14);
                 doc.text("COTAÇÃO", 10, 30);
-                doc.setFontSize(12);
-                doc.text(`Cotação para: ${empresaNome}`, 130, 30);
+                doc.setFontSize(10);
+                doc.text(`Cotação para: ${empresaNome}`, 130, 10);
+                doc.text(`NUIT: ${empresanuit}`, 130, 20);
+                doc.text(`Endereço: ${empresaendereco}`, 130, 30);
+                doc.text(`E-mail: ${empresaemail}`, 130, 40);
 
-                let y = 40;
+                let y = 50;
+                doc.setFontSize(12);
                 doc.text("Nr", 10, y);
                 doc.text("Descrição", 40, y);
                 doc.text("QTD", 110, y);
                 doc.text("Preço Un.", 130, y);
-                doc.text("Preço Total", 160, y);
-                doc.text("IVA", 190, y);
+                doc.text("Preço Total", 170, y);
+                doc.text("IVA", 200, y);
                 y += 10;
 
                 let total = 0;
@@ -100,8 +107,8 @@
                     doc.text(`${index + 1}`, 10, y);
                     doc.text(item.nome, 30, y);
                     doc.text(`${item.quantidade}`, 110, y);
-                    doc.text(`MZN ${item.preco}`, 130, y);
-                    doc.text(`MZN ${precoTotal.toFixed(2)}`, 160, y);
+                    doc.text(`MT ${item.preco}`, 130, y);
+                    doc.text(`MT ${precoTotal.toFixed(2)}`, 160, y);
                     doc.text(`16%`, 190, y);
                     total += precoTotal + iva;
                     y += 10;
