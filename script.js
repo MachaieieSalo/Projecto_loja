@@ -4,25 +4,102 @@ document.addEventListener("DOMContentLoaded", function() {
     // Dados de exemplo de produtos
     const produtos = [
         {
-            nome: "Capacete de Segurança",
-            descricao: "Capacete de segurança resistente e confortável.",
-            preco: "1432,87 MT",
-            imagem: "images/capacete.jpg",
-            id: 1
-        },
-        {
-            nome: "Luva de Proteção",
-            descricao: "Luva de proteção contra cortes e abrasões.",
-            preco: "1432,87 MT",
-            imagem: "images/luva.jpg",
-            id: 2
-        },
-        {
-            nome: "Botas de Segurança",
+            nome: "CHELSEA SAFETY BOOT",
             descricao: "Botas de segurança com biqueira de aço.",
-            preco: "1432,87 MT",
-            imagem: "images/botas.jpg",
-            id: 3
+            preco: "1700,99 MT",
+            imagem: "images/CHELSEA_SAFETY_BOOT.jpg",
+            id:1
+        },
+        {
+            nome: "MERCURY SAFETY BOOT",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/MERCURY_SAFETY_BOOT.jpg",
+            id:2
+        },
+        {
+            nome: "HIKER SAFETY SHOE",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/HIKER_SAFETY_SHOE.jpg",
+            id:3
+        },
+        {
+            nome: "ULINDA SZ BOOTS",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/ULINDA_SZ_BOOTS.jpg",
+            id:4
+        },
+        {
+            nome: "LYNX 8.0 SZ BOOT",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/LYNX_8.0_SZ_BOOT.jpg",
+            id:5
+        },
+        {
+            nome: "CLASSIC BOOT",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/CLASSIC_BOOT.jpg",
+            id:6
+        },
+        {
+            nome: "VIPER PRO 8' SZ CT WIDE BOOT",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/VIPER_PRO_8_SZ_CT_WIDE_BOOT.jpg",
+            id:7
+        },
+        {
+            nome: "PATRIOT COMBAT BOOT",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/PATRIOT_COMBAT_BOOT.jpg",
+            id:8
+        },
+        {
+            nome: "KRONOS COMBAT BOOT",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/KRONOS_COMBAT_BOOT.jpg",
+            id:9
+        },
+        {
+            nome: "REACTION COMBAT BOOT",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/REACTION_COMBAT_BOOT.jpg",
+            id:10
+        },
+        {
+            nome: "CANVAS BOOTS",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/CANVAS_BOOTS.jpg",
+            id:11
+        },
+        {
+            nome: "TROOPER COMBAT BOOTS",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/TROOPER_COMBAT_BOOTS.jpg",
+            id:12
+        },
+        {
+            nome: "COMBAT LEATHER BOOTS",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/COMBAT_LEATHER_BOOTS.jpg",
+            id:13
+        },
+        {
+            nome: "ELITE COMBAT BOOT",
+            descricao: "Botas de segurança com biqueira de aço.",
+            preco: "1700,99 MT",
+            imagem: "images/ELITE_COMBAT_BOOT.jpg",
+            id:14
         }
     ];
 
