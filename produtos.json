@@ -1,85 +1,85 @@
 [
     {
         "nome": "CHELSEA SAFETY BOOT",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Design slip-on (sem atacadores) para facilidade de calce e remoção.",
         "preco": "1700,99 MT",
         "imagem": "images/CHELSEA_SAFETY_BOOT.jpg"
     },
     {
         "nome": "MERCURY SAFETY BOOT",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Modelo de segurança de alto desempenho, projetado para ambientes industriais exigentes",
         "preco": "1700,99 MT",
         "imagem": "images/MERCURY_SAFETY_BOOT.jpg"
     },
     {
         "nome": "HIKER SAFETY SHOE",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Modelo híbrido entre um sapato de segurança e uma bota tática de caminhada.",
         "preco": "1700,99 MT",
         "imagem": "images/HIKER_SAFETY_SHOE.jpg"
     },
     {
         "nome": "ULINDA SZ BOOTS",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Design robusto com cano médio para maior suporte ao tornozelo",
         "preco": "1700,99 MT",
         "imagem": "images/ULINDA_SZ_BOOTS.jpg"
     },
     {
         "nome": "LYNX 8.0 SZ BOOT",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Bota tática de alto desempenho, projetada para forças de segurança e profissionais de resposta rápida.",
         "preco": "1700,99 MT",
         "imagem": "images/LYNX_8.0_SZ_BOOT.jpg"
     },
     {
         "nome": "CLASSIC BOOT",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Confeccionada em couro de flor integral com resistência à água. Solado de borracha vulcanizada com alta durabilidade.",
         "preco": "1700,99 MT",
         "imagem": "images/CLASSIC_BOOT.jpg"
     },
     {
         "nome": "VIPER PRO 8' SZ CT WIDE BOOT",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Bota tática de cano alto com design ergonômico. Construção em couro premium e nylon balístico para resistência e leveza.",
         "preco": "1700,99 MT",
         "imagem": "images/VIPER_PRO_8_SZ_CT_WIDE_BOOT.jpg"
     },
     {
         "nome": "PATRIOT COMBAT BOOT",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Couro legítimo com tratamento hidrofugante. Cano alto para proteção contra torções e impactos.",
         "preco": "1700,99 MT",
         "imagem": "images/PATRIOT_COMBAT_BOOT.jpg"
     },
     {
         "nome": "KRONOS COMBAT BOOT",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Construção em couro premium e tecidos sintéticos reforçados. Reforço no calcanhar e tornozelo para maior estabilidade. Solado de borracha com sistema de absorção de impacto e antiderrapante.",
         "preco": "1700,99 MT",
         "imagem": "images/KRONOS_COMBAT_BOOT.jpg"
     },
     {
         "nome": "REACTION COMBAT BOOT",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Modelo ágil e leve para operações de rápida mobilidade. Construção híbrida em couro e materiais sintéticos de alta resistência. Proteção contra umidade e calor excessivo. Solado de borracha com alto grip e resistência ao desgaste. Amortecimento interno para maior conforto em longas marchas.",
         "preco": "1700,99 MT",
         "imagem": "images/REACTION_COMBAT_BOOT.jpg"
     },
     {
         "nome": "CANVAS BOOTS",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Construção em lona de alta resistência, reforçada com costuras duplas. Solado de borracha vulcanizada com boa aderência em terrenos variados. Ideal para operações urbanas e climas quentes.",
         "preco": "1700,99 MT",
         "imagem": "images/CANVAS_BOOTS.jpg"
     },
     {
         "nome": "TROOPER COMBAT BOOTS",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Modelo robusto desenvolvido para uso militar intensivo. Couro tratado com resistência à água e abrasão. Reforço interno para proteção contra impactos. Sistema de amarração reforçado para ajuste firme. Solado projetado para máxima aderência em superfícies diversas.",
         "preco": "1700,99 MT",
         "imagem": "images/TROOPER_COMBAT_BOOTS.jpg"
     },
     {
         "nome": "COMBAT LEATHER BOOTS",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Modelo tradicional de bota militar em couro genuíno. Cano alto para maior suporte e proteção. Reforço na biqueira e calcanhar para durabilidade. Solado de borracha resistente a impactos e desgaste. Uso ideal em operações táticas e patrulhamento.",
         "preco": "1700,99 MT",
         "imagem": "images/COMBAT_LEATHER_BOOTS.jpg"
     },
     {
         "nome": "ELITE COMBAT BOOT",
-        "descricao": "Botas de segurança com biqueira de aço.",
+        "descricao": "Modelo premium de alto desempenho para forças especiais. Construção híbrida em couro e tecidos sintéticos avançados. Sistema de ventilação para regulação térmica e conforto. Palmilha ergonômica com absorção de impacto. Solado antiderrapante e resistente a óleo e produtos químicos. Fechamento rápido com zíper lateral e atacadores reforçados.",
         "preco": "1700,99 MT",
         "imagem": "images/ELITE_COMBAT_BOOT.jpg"
     }
