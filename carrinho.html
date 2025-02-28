@@ -28,10 +28,10 @@
         <h2>Cotação Materiais de Segurança</h2>
         <h3> </h3>
         <h4>Dados da Empresa</h4>
-        <p1><input type="text" id="empresaNome" placeholder="Digite o nome da empresa"></p1>
-        <p2><input type="text" id="empresanuit" placeholder="Digite o NUIT da empresa"></p2>
-        <p3><input type="text" id="empresaendereco" placeholder="Digite o endereço da empresa"></p3>
-        <p4><input type="text" id="empresaemail" placeholder="Digite o email da empresa"></p4>
+        <input type="text" id="empresaNome" name="empresaNome" placeholder="Digite o nome da empresa">
+        <input type="number" id="empresaNuit" name="empresaNuit" placeholder="Digite o NUIT da empresa">
+        <input type="text" id="empresaEndereco" name="empresaEndereco" placeholder="Digite o endereço da empresa">
+        <input type="email" id="empresaEmail" name="empresaEmail" placeholder="Digite o email da empresa">
         <div id="itens-carrinho">
             <!-- Itens do carrinho serão exibidos aqui -->
         </div>
@@ -87,9 +87,9 @@
                 doc.text("COTAÇÃO", 10, 30);
                 doc.setFontSize(10);
                 doc.text(`Cotação para: ${empresaNome}`, 130, 10);
-                doc.text(`NUIT: ${empresanuit}`, 130, 20);
-                doc.text(`Endereço: ${empresaendereco}`, 130, 30);
-                doc.text(`E-mail: ${empresaemail}`, 130, 40);
+                doc.text(`NUIT: ${empresaNuit}`, 130, 20);
+                doc.text(`Endereço: ${empresaEndereco}`, 130, 30);
+                doc.text(`E-mail: ${empresaEmail}`, 130, 40);
 
                 let y = 50;
                 doc.setFontSize(12);
@@ -109,8 +109,8 @@
                     doc.text(item.nome, 30, y);
                     doc.text(`${item.quantidade}`, 110, y);
                     doc.text(`MT ${item.preco}`, 130, y);
-                    doc.text(`MT ${precoTotal.toFixed(2)}`, 160, y);
-                    doc.text(`16%`, 190, y);
+                    doc.text(`MT ${precoTotal.toFixed(2)}`, 170, y);
+                    doc.text(`16%`, 200, y);
                     total += precoTotal + iva;
                     y += 10;
                 });
