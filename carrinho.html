@@ -89,7 +89,7 @@
                 doc.setFontSize(6);
                 doc.setFont("courier", "normal");
                 doc.text("Bairro das FPLM, Casa 1A, Quarteirão 13", 10, 30);
-                doc.text("Contacto: 258 87 793 7975", 10, 32);
+                doc.text("Contacto: +258 87 793 7975", 10, 32);
                 doc.setFontSize(10);
                 doc.text(`Cotação para: ${empresaNome}`, 110, 15);
                 doc.text(`NUIT: ${empresaNuit}`, 110, 20);
@@ -125,15 +125,15 @@
                 doc.text(`Subtotal: MZN ${total.toFixed(2)}`, 10, y + 10);
                 doc.text(`IVA (16%): MZN ${(total * 0.16).toFixed(2)}`, 10, y + 15);
                 doc.text(`Total: MZN ${(total + total * 0.16).toFixed(2)}`, 10, y + 20);
-                doc.text("Esta cotação tem a validade de 05 dias", 10, y + 25);
+                doc.text("Esta cotação tem a validade de 05 dias", 10, y +80);
                 doc.setFontSize(10);
                 doc.setFont("courier", "bold");
-                doc.text(`DADOS BANCÁRIOS`, 130, y + 10);
-                doc.text(`MPESA`, 130, y + 15);
-                doc.text(`Conta: 8481766589`, 130, y + 20);
-                doc.text(`EMOLA`, 130, y + 25);
-                doc.text(`Conta: 878166583`, 130, y + 30);
-                doc.text(`Titular: Pedro Mate`, 130, y + 35);
+                doc.text(`DADOS BANCÁRIOS`, 110, y + 10);
+                doc.text(`MPESA`, 110, y + 15);
+                doc.text(`Conta: 8481766589 - Titular: Pedro Mate`, 110, y + 20);
+                doc.text(`EMOLA`, 110, y + 25);
+                doc.text(`Conta: 878166583 - Titular: Pedro Mate`, 110, y + 30);
+               
 
                 doc.save(`Cotação_${empresaNome.replace(/\s+/g, "_")}.pdf`);
             });
