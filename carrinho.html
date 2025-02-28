@@ -73,6 +73,9 @@
 
             finalizarCompraBtn.addEventListener("click", function() {
                 const empresaNome = document.getElementById("empresaNome").value.trim();
+                const empresaNuit = document.getElementById("empresaNuit").value.trim();
+                const empresaEndereco = document.getElementById("empresaEndereco").value.trim();
+                const empresaEmail = document.getElementById("empresaEmail").value.trim();
                 if (empresaNome === "") {
                     alert("Por favor, insira o nome da empresa.");
                     return;
