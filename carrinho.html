@@ -76,15 +76,17 @@
 
                 const { jsPDF } = window.jspdf;
                 const doc = new jsPDF();
-
+                // Adiciona a logo ao PDF
+                const logo = document.getElementById('headerLogo').src;
+                doc.addImage(logo, 'PNG', 10, 10, 50, 20); // Ajuste a posição e tamanho conforme necessário
                 doc.setFontSize(18);
-                doc.text("COTAÇÃO", 10, 20);
+                doc.text("COTAÇÃO", 10, 30);
                 doc.setFontSize(12);
-                doc.text(`Cotação para: ${empresaNome}`, 10, 30);
+                doc.text(`Cotação para: ${empresaNome}`, 10, 40);
 
                 let y = 40;
                 doc.text("Nr", 10, y);
-                doc.text("Descrição", 30, y);
+                doc.text("Descrição", 40, y);
                 doc.text("QTD", 110, y);
                 doc.text("Preço Un.", 130, y);
                 doc.text("Preço Total", 160, y);
