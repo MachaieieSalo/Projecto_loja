@@ -86,8 +86,10 @@
                 // Adiciona a logo ao PDF
                 const logo = document.getElementById('headerLogo').src;
                 doc.addImage(logo, 'PNG', 10, 10, 50, 20); // Ajuste a posição e tamanho conforme necessário
-                doc.setFontSize(14);
-                doc.text("COTAÇÃO", 10, 30);
+                doc.setFontSize(6);
+                doc.setFont(SimSun);
+                doc.text("Bairro das FPLM, Casa 1A, Quarteirão 13", 10, 30);
+                doc.text("Contacto: 258 87 793 7975", 10, 40);
                 doc.setFontSize(10);
                 doc.text(`Cotação para: ${empresaNome}`, 110, 10);
                 doc.text(`NUIT: ${empresaNuit}`, 110, 20);
