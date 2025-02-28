@@ -87,7 +87,7 @@
                 const logo = document.getElementById('headerLogo').src;
                 doc.addImage(logo, 'PNG', 10, 10, 50, 20); // Ajuste a posição e tamanho conforme necessário
                 doc.setFontSize(6);
-                doc.setFont("helvetica", "normal");
+                doc.setFont("courier", "normal");
                 doc.text("Bairro das FPLM, Casa 1A, Quarteirão 13", 10, 30);
                 doc.text("Contacto: 258 87 793 7975", 10, 35);
                 doc.setFontSize(10);
@@ -97,7 +97,7 @@
                 doc.text(`E-mail: ${empresaEmail}`, 110, 40);
 
                 let y = 60;
-                doc.setFont("helvetica", "normal");
+                doc.setFont("courier", "normal");
                 doc.setFontSize(12);
                 doc.text("Nr", 10, y);
                 doc.text("Descrição", 40, y);
@@ -111,6 +111,7 @@
                 carrinho.forEach((item, index) => {
                     const precoTotal = parseFloat(item.preco) * item.quantidade;
                     const iva = precoTotal * 0.16;
+                    doc.setFont("courier", "normal");
                     doc.text(`${index + 1}`, 10, y);
                     doc.text(item.nome, 30, y);
                     doc.text(`${item.quantidade}`, 110, y);
