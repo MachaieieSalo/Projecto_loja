@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Materiais de Segurança</title>
+    <title>MSS - Loja de Materiais de Segurança</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
+        <button id="toggleLang">Mudar para Inglês</button>
         <div class="logo">
             <img src="images/logo.png" alt="Logo Loja de Materiais de Segurança">
         </div>
         <nav>
             <ul>
-                <li><a href="index.html" id="home">Home</a></li>
-                <li><a href="produtos.html" id="produtos">Produtos</a></li>
-                <li><a href="contacto.html" id="contacto">Contacto</a></li>
-                <li><a href="carrinho.html" id="carrinho">Cotação</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="produtosdisponiveis.html">Produtos disponiveis</a></li>            
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrinho.html">Cotação</a></li>
             </ul>
         </nav>
-        <button id="toggleLang">Mudar para Inglês</button>
+        
     </header>
-
-    <section class="produtos-container">
-        <h2 id="produtosTitle">Produtos</h2>
-        <!-- Os produtos serão carregados aqui via JavaScript -->
+    <section>
+        <h2>Seja bem-vindo a Moz Security Supplies</h2>
     </section>
 
+
     <footer>
-        <p id="footerText">&copy; 2025 Moz Security Supplies. Powered by: Salomao Machaieie. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Moz Security Supplies.Powered by: Salomao Machaieie Todos os direitos reservados.</p>
     </footer>
 
     <script>
@@ -39,7 +40,6 @@
                 produtos: "Produtos",
                 contacto: "Contacto",
                 carrinho: "Cotação",
-                produtosTitle: "Produtos",
                 footerText: "&copy; 2025 Moz Security Supplies. Powered by: Salomao Machaieie. Todos os direitos reservados.",
                 toggle: "Mudar para Inglês"
             },
@@ -48,7 +48,6 @@
                 produtos: "Products",
                 contacto: "Contact",
                 carrinho: "Quotation",
-                produtosTitle: "Products",
                 footerText: "&copy; 2025 Moz Security Supplies. Powered by: Salomao Machaieie. All rights reserved.",
                 toggle: "Switch to Portuguese"
             }
@@ -61,7 +60,6 @@
             document.getElementById('produtos').innerText = texts[currentLang].produtos;
             document.getElementById('contacto').innerText = texts[currentLang].contacto;
             document.getElementById('carrinho').innerText = texts[currentLang].carrinho;
-            document.getElementById('produtosTitle').innerText = texts[currentLang].produtosTitle;
             document.getElementById('footerText').innerHTML = texts[currentLang].footerText;
             document.getElementById('toggleLang').innerText = texts[currentLang].toggle;
         }
@@ -78,3 +76,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
