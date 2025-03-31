@@ -84,4 +84,20 @@
         "imagem": "images/ELITE_COMBAT_BOOT.jpg"
     }
     
-]
+];
+const carouselInner = document.getElementById("carouselItems");
+    produtos.forEach((produto, index) => {
+        const activeClass = index === 0 ? "active" : "";
+        const item = `
+            <div class="carousel-item ${activeClass}">
+                <img src="${produto.imagem}" class="d-block w-100" alt="${produto.nome}">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>${produto.nome}</h5>
+                    <p>${produto.descricao}</p>
+                    <p><strong>${produto.preco}</strong></p>
+                </div>
+            </div>
+        `;
+        carouselInner.innerHTML += item;
+    });
+});
