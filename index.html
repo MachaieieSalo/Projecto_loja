@@ -4,76 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSS - Loja de Materiais de Segurança</title>
+    
+    <!-- CSS Externo -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <button id="toggleLang">Mudar para Inglês</button>
+    <!-- Cabeçalho -->
+    <header class="bg-dark text-white text-center p-3">
+        <button id="toggleLang" class="btn btn-secondary">Mudar para Inglês</button>
         <div class="logo">
-            <img src="images/logo.png" alt="Logo Loja de Materiais de Segurança">
+            <img src="images/logo.png" alt="Logo Loja de Materiais de Segurança" width="150">
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="produtosdisponiveis.html">Produtos disponiveis</a></li>            
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="carrinho.html">Cotação</a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html" id="home">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="produtos.html" id="produtos">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="produtosdisponiveis.html">Produtos disponíveis</a></li>            
+                <li class="nav-item"><a class="nav-link text-white" href="contacto.html" id="contacto">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="carrinho.html" id="carrinho">Cotação</a></li>
             </ul>
         </nav>
-        
     </header>
-    <section>
-        <h2>Seja bem-vindo a Moz Security Supplies</h2>
+
+    <!-- Seção de Introdução -->
+    <section class="container text-center mt-4">
+        <h2>Seja bem-vindo à Moz Security Supplies</h2>
+        <p>Conheça nossos produtos de segurança e qualidade incomparável.</p>
     </section>
 
+    <!-- Carrossel de Produtos -->
+    <div class="container mt-4">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carouselItems"></div>
 
-    <footer>
-        <p>&copy; 2025 Moz Security Supplies.Powered by: Salomao Machaieie Todos os direitos reservados.</p>
+            <!-- Botões de navegação -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p id="footerText">&copy; 2025 Moz Security Supplies. Powered by: Salomao Machaieie. Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-        const texts = {
-            pt: {
-                home: "Home",
-                produtos: "Produtos",
-                contacto: "Contacto",
-                carrinho: "Cotação",
-                footerText: "&copy; 2025 Moz Security Supplies. Powered by: Salomao Machaieie. Todos os direitos reservados.",
-                toggle: "Mudar para Inglês"
-            },
-            en: {
-                home: "Home",
-                produtos: "Products",
-                contacto: "Contact",
-                carrinho: "Quotation",
-                footerText: "&copy; 2025 Moz Security Supplies. Powered by: Salomao Machaieie. All rights reserved.",
-                toggle: "Switch to Portuguese"
-            }
-        };
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        let currentLang = 'pt';
-
-        function updateLanguage() {
-            document.getElementById('home').innerText = texts[currentLang].home;
-            document.getElementById('produtos').innerText = texts[currentLang].produtos;
-            document.getElementById('contacto').innerText = texts[currentLang].contacto;
-            document.getElementById('carrinho').innerText = texts[currentLang].carrinho;
-            document.getElementById('footerText').innerHTML = texts[currentLang].footerText;
-            document.getElementById('toggleLang').innerText = texts[currentLang].toggle;
-        }
-
-        document.getElementById('toggleLang').addEventListener('click', function() {
-            currentLang = currentLang === 'pt' ? 'en' : 'pt';
-            updateLanguage();
-        });
-
-        // Inicializa a linguagem
-        updateLanguage();
-    </script>
-
+    <!-- Script Externo -->
     <script src="script.js"></script>
+
 </body>
 </html>
+
 
